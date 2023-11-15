@@ -48,11 +48,17 @@ main {
 
 .write-btn {
   position: fixed;
-  background-color: orange;
+  background-color: var(--btn-primary);
   color: white;
 
   bottom: 120px;
   right: 20px;
   border-radius: 25px;
   padding: 10px 15px 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--btn-hover);
 }
