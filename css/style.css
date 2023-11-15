@@ -4,7 +4,7 @@
 @import "footer.css";
 
 .media-info-msg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -12,13 +12,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+
   background-color: red;
-  transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .media-info-msg {
-    opacity: 0;
+    display: none;
   }
 }
